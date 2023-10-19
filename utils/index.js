@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const generateMarkdown = require("../utils/generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
 const { type } = require("os");
 
 const questions = [
@@ -97,4 +97,24 @@ const questions = [
   },
 ];
 
-module.exports = questions;
+
+
+
+  // writing the readme file
+
+  function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  }
+
+// starting the app
+
+function init() {
+inquirer.prompt(questions).then((responses => {
+  console.log("Creating Professional README.md File...");
+  writeToFile("./Develop/README.md", generateMarkDown({ ...responses }));
+}))
+
+}
+init();
+
+
