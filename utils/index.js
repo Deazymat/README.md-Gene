@@ -1,8 +1,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const generateMarkdown = require("./generateMarkdown");
-const { type } = require("os");
+const generateMarkdown = require("./generateMarkdown.js");
+// const { type } = require("os");
 
 const questions = [
   {
@@ -111,7 +111,7 @@ const questions = [
 function init() {
 inquirer.prompt(questions).then((responses => {
   console.log("Creating Professional README.md File...");
-  writeToFile("./Develop/README.md", generateMarkDown({ ...responses }));
+  writeToFile("./Develop/README.md", generateMarkdown({ ...responses }));
 }))
 
 }
