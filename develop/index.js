@@ -1,8 +1,8 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
-const path = require("path");
-const generateMarkdown = require("./generateMarkdown.js");
-// const { type } = require("os");
+const fs = require('fs');
+const inquirer = require('inquirer');
+const path = require('path');
+const generateMarkdown = require('./utils/generateMarkdown');
+
 
 const questions = [
   {
@@ -102,19 +102,22 @@ const questions = [
 
   // writing the readme file
 
-  function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-  }
-
-// starting the app
+function writeToFile(fileName, data) {
+  fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 function init() {
-inquirer.prompt(questions).then((responses => {
-  console.log("Creating Professional README.md File...");
-  writeToFile("./Develop/README.md", generateMarkdown({ ...responses }));
-}))
-
+  inquirer
+    .prompt(questions)
+    .then((answers) => {
+      const markdownContent = generateMarkdown(answers);
+      const fileName = "README.md";
+      writeToFile(fileName, markdownContent);
+      console.log(`${fileName} has been generated successfully!`);
+    })
+    .catch((error) => {
+      console.error("An error occurred during README generation: ", error);
+    });
 }
+
 init();
-
-
