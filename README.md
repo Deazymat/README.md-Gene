@@ -15,12 +15,17 @@ An interactive command-line application that dynamically generates a professiona
 - [License](#license)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Screenshot](#screenshot)
 
 ## Installation
 
 ```
 Clone the repository, navigate to the project directory, and run node index.js to start the questionnaire.
 ```
+
+## Screenshot
+
+![Application Screenshot](./develop/utils/screenshots/screencapture-github-Deazymat-README-md-Gene-2023-11-04-20_52_39.png)
 
 ## Usage
 
