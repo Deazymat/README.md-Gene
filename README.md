@@ -44,5 +44,5 @@ Run node index.js and follow the prompts to test the README.md generation proces
 
 For any questions or inquiries, please reach out to me:
 
-- **GitHub**: [Just me for now, but I'm looking forward to your collaboration!](<https://github.com/Just> me for now, but I'm looking forward to your collaboration!)
-- **Email**: [Please reach out to me at https://github.com/Deazymat](mailto:Please reach out to me at <https://github.com/Deazymat>)
+- **GitHub**: [Just me for now, but I'm looking forward to your collaboration!](<https://github.com/Deazymat> me for now, but I'm looking forward to your collaboration!)
+
