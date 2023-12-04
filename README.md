@@ -36,7 +36,7 @@ After installation, answer the prompts in your command line to generate the READ
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request with your proposed changes or additions
+Thanks to https://chat.openai.com/ , and Github copilot as resources
 
 ## License
 
