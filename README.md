@@ -22,6 +22,9 @@ An interactive command-line application that dynamically generates a professiona
 ```
 Clone the repository, navigate to the project directory, and run node index.js to start the questionnaire.
 ```
+## video
+
+https://drive.google.com/file/d/1Z0APBg-agARnIW8mfhVCFZ1vjfsqmuIp/view
 
 ## Screenshot
 
@@ -33,7 +36,7 @@ After installation, answer the prompts in your command line to generate the READ
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request with your proposed changes or additions
+Thanks to https://chat.openai.com/ , and Github copilot as resources
 
 ## License
 
