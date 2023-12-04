@@ -22,6 +22,9 @@ An interactive command-line application that dynamically generates a professiona
 ```
 Clone the repository, navigate to the project directory, and run node index.js to start the questionnaire.
 ```
+## video
+
+https://drive.google.com/file/d/1Z0APBg-agARnIW8mfhVCFZ1vjfsqmuIp/view
 
 ## Screenshot
 
